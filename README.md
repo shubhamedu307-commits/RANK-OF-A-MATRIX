@@ -17,10 +17,15 @@ To write a python program to find the rank of a matrix
 #RegisterNumber:26013866
 
 import os 
+
 os.environ["OPENBLAS_NUM_THREADS"]="1"
+
 import numpy as np
+
 A = np.array([[5, -3, -10],[2, 2, -3],[-3, -1, 5]])
+
 r=np.linalg.matrix_rank(A)
+
 print(r)
 
 <img width="1465" height="623" alt="EXP 2 rank of a matrix" src="https://github.com/user-attachments/assets/b118aec8-d051-46fa-ae0d-7970a7f1b6c7" />
